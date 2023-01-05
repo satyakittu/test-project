@@ -31,12 +31,20 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				<configuration>
-					<standaloneDeployment>
-						<muleHome>C:\Users\admin\Downloads\mule-ee-distribution-standalone-4.4.0-20220622\mule-enterprise-standalone-4.4.0-20220622</muleHome>
-						<muleVersion>4.4.0</muleVersion>
-					</standaloneDeployment>
-				</configuration>
+				 <configuration>
+    <armDeployment>
+      <muleVersion>4.4.0</muleVersion>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <target>testserver</target>
+      <targetType>Gateway</targetType>
+      <username>satya5030</username>
+      <password>Bajji@143</password>
+      <environment>Sandbox</environment>
+      <properties>
+        <key>value</key>
+      </properties>
+    </armDeployment>
+  </configuration>
 			</plugin>
 		</plugins>
 	</build>
